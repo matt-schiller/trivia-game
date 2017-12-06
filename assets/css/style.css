@@ -1,0 +1,21 @@
+.panel-body {
+	border-radius:4px;
+}
+
+.option:hover {
+	background-color:ghostwhite;
+}
+
+.background-image {
+	background-image:url('http://www.studiosflatrock.com/wp-content/uploads/2017/07/5-Tips-Bagi-Fotografer-Pemula-agar-Percaya-Diri-dihadapan-Kamera.jpg');
+	background-size:cover;
+	border-radius:6px;
+}
+
+.jumbotron {
+	background:rgba(255,255,255,0.75)!important;
+}
+
+.navbar {
+	border-radius:0!important;
+}

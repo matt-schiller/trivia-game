@@ -19,3 +19,11 @@
 .navbar {
 	border-radius:0!important;
 }
+
+#timer-panel {
+	text-align:center;
+}
+
+#timer {
+	font-size:30px;
+}

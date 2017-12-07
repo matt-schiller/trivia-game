@@ -46,6 +46,38 @@ var questions = [
    "c": "Edward VII",
    "d": "George V",
    "answer": "b"
+ },
+ {
+   "question": "What does JPEG stand for?",
+   "a": "Joint Photographic Experts Group",
+   "b": "Joint Photography Expertise Group",
+   "c": "Java Photographic Export Graph",
+   "d": "Java Photography Export Graph",
+   "answer": "a"
+ },
+ {
+   "question": "How large is the world's largest physical film photograph?",
+   "a": "3 square meters",
+   "b": "30 square meters",
+   "c": "330 square meters",
+   "d": "3330 square meters",
+   "answer": "c"
+ },
+ {
+   "question": "What is the etymology of the word photo?",
+   "a": "Greek, light",
+   "b": "Greek, drawing",
+   "c": "Latin, light",
+   "d": "Latin, drawing",
+   "answer": "a"
+ },
+ {
+   "question": "Which city in the US has the highest earning photographers?",
+   "a": "New York",
+   "b": "Boston",
+   "c": "Chicago",
+   "d": "San Francisco",
+   "answer": "b"
  }
 ]
 
@@ -62,7 +94,7 @@ function start() {
 	correct = 0;
 	incorrect = 0;
 	unanswered = 0;
-	timeLeft = 30;
+	timeLeft = 20;
 	//Hides and shows elements as necessary
 	$("#start").hide();
 	$("#results").hide();
@@ -88,9 +120,9 @@ function startTimer () {
 	};
 };
 
-function stopTimer () {
-    clearInterval(timer);
-}
+// function stopTimer () {
+//     clearInterval(timer);
+// }
 
 function newQuestion () {
 	//Advance one question forward
@@ -98,7 +130,7 @@ function newQuestion () {
 	//Check if questions remaining
 	if(currentQuestion < totalQuestions) {
 		//Reset timer
-		timeLeft = 30;
+		timeLeft = 20;
 		//Load in new question
 		$("#question").html(questions[currentQuestion].question);
 		$("#a").html("A. " + questions[currentQuestion].a);
